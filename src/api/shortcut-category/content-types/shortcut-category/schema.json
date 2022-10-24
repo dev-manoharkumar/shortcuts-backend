@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shortcut_categories",
+  "info": {
+    "singularName": "shortcut-category",
+    "pluralName": "shortcut-categories",
+    "displayName": "Shortcut Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "shortcut_categories"
+    }
+  }
+}
