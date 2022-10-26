@@ -4,7 +4,8 @@
   "info": {
     "singularName": "operating-system",
     "pluralName": "operating-systems",
-    "displayName": "Operating System"
+    "displayName": "Operating System",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,12 @@
       "required": true,
       "unique": true,
       "maxLength": 20
+    },
+    "shortcuts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::shortcut.shortcut",
+      "mappedBy": "operating_system"
     }
   }
 }

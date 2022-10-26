@@ -24,6 +24,24 @@
       "type": "string",
       "required": true,
       "maxLength": 50
+    },
+    "operating_system": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::operating-system.operating-system",
+      "inversedBy": "shortcuts"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "shortcuts"
+    },
+    "shortcut_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::shortcut-category.shortcut-category",
+      "inversedBy": "shortcuts"
     }
   }
 }

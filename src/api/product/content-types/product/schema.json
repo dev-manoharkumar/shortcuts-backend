@@ -45,9 +45,9 @@
         "audios"
       ]
     },
-    "product_category": {
+    "product_categories": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::product-category.product-category",
       "inversedBy": "products"
     },
@@ -55,6 +55,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::shortcut-category.shortcut-category",
+      "mappedBy": "product"
+    },
+    "shortcuts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::shortcut.shortcut",
       "mappedBy": "product"
     }
   }

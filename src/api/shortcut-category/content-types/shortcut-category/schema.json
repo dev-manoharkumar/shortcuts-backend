@@ -4,7 +4,8 @@
   "info": {
     "singularName": "shortcut-category",
     "pluralName": "shortcut-categories",
-    "displayName": "Shortcut Category"
+    "displayName": "Shortcut Category",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,6 +22,20 @@
       "relation": "manyToOne",
       "target": "api::product.product",
       "inversedBy": "shortcut_categories"
+    },
+    "slug": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100
+    },
+    "order": {
+      "type": "integer"
+    },
+    "shortcuts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::shortcut.shortcut",
+      "mappedBy": "shortcut_category"
     }
   }
 }
