@@ -19,7 +19,7 @@
     "@strapi/strapi": "4.4.5",
     "better-sqlite3": "7.4.6",
     "cross-env": "^7.0.3",
-    "pg": "^8.8.0",
+    "pg": "^8.0.8",
     "strapi-plugin-placeholder": "^4.3.6",
     "strapi-plugin-slugify": "^2.2.3"
   },
