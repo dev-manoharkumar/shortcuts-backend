@@ -10,6 +10,6 @@ module.exports = ({env}) => ({
       password: env('DATABASE_PASSWORD', 'postgres'),
       schema: env('DATABASE_SCHEMA', 'public'), // Not required
     },
-    debug: false,
+    useNullAsDefault: true,
   },
 });
