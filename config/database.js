@@ -8,8 +8,10 @@ module.exports = ({env}) => ({
       database: env('DATABASE_NAME', 'shortcuts'),
       user: env('DATABASE_USERNAME', 'postgres'),
       password: env('DATABASE_PASSWORD', 'postgres'),
-      schema: env('DATABASE_SCHEMA', 'public'), // Not required
+      schema: env('DATABASE_SCHEMA', 'public'), // Not required,
+      ssl: env('DATABASE_SSL', false)
     },
+    acquireConnectionTimeout: 9999999999,
     debug: true,
     pool: {
       min: 0,
