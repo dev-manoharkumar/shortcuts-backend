@@ -11,7 +11,7 @@ module.exports = ({env}) => ({
       schema: env('DATABASE_SCHEMA', 'public'), // Not required,
       ssl: env('DATABASE_SSL', false)
     },
-    acquireConnectionTimeout: 9999999999,
+    acquireConnectionTimeout: 180000,
     debug: true,
     pool: {
       min: 0,
