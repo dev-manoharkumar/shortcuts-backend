@@ -6,9 +6,9 @@ module.exports = ({env}) => ([
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'connect-src': ['self', 'https:'],
-          'img-src': ['self', 'data:', 'blob:', 'https://strapi.io', `${env('CDN_BASE_URL')}`, 'https://dl.airtable.com'],
-          'media-src': ['self', 'data:', 'blob:', 'https://strapi.io', `${env('CDN_BASE_URL')}`, 'https://dl.airtable.com'],
+          'connect-src': ['\'self\'', 'https:'],
+          'img-src': ['\'self\'', 'data:', 'blob:', 'https://strapi.io', `${env('CDN_BASE_URL')}`, 'https://dl.airtable.com'],
+          'media-src': ['\'self\'', 'data:', 'blob:', 'https://strapi.io', `${env('CDN_BASE_URL')}`, 'https://dl.airtable.com'],
           upgradeInsecureRequests: null,
         },
       }
