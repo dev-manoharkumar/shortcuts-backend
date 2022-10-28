@@ -2667,6 +2667,22 @@ aws-sdk@2.1215.0:
     uuid "8.0.0"
     xml2js "0.4.19"
 
+aws-sdk@^2.713.0:
+  version "2.1242.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1242.0.tgz#152ce513a9f97642b4af9b935cf7c07e2fc6348f"
+  integrity sha512-qVpaMafIHw3Mn3Mo7zTY4Xq8lHkTxIRQJFV5ronsi4lTLqhqF1rANoPKSlVWxUPRyG5so/we+ZUIog5wpjSgiw==
+  dependencies:
+    buffer "4.9.2"
+    events "1.1.1"
+    ieee754 "1.1.13"
+    jmespath "0.16.0"
+    querystring "0.2.0"
+    sax "1.2.1"
+    url "0.10.3"
+    util "^0.12.4"
+    uuid "8.0.0"
+    xml2js "0.4.19"
+
 aws-sign2@~0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
@@ -9319,6 +9335,14 @@ strapi-plugin-slugify@^2.2.3:
   integrity sha512-o5Vpe7Ii4xAxxS0f9fUmjUghLipEyqISMHfvX3YxJQIwIh6K+xDOcyPfhcnaAx25kTkrARoVGcdtoQiwqGurEw==
   dependencies:
     "@sindresorhus/slugify" "1.1.0"
+
+strapi-provider-upload-aws-s3-cloudfront@^3.6.4:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/strapi-provider-upload-aws-s3-cloudfront/-/strapi-provider-upload-aws-s3-cloudfront-3.6.4.tgz#f727bb5cf9fc81b5950d5c917b46bff097717491"
+  integrity sha512-LFcvI+yZj6dWROUfHufiHqRFbAd3HN63y7OEXZvDUBlxhuuAp9GITxjgIF1jxCm7U4OmpAF6qXLQLtTXADNqyQ==
+  dependencies:
+    aws-sdk "^2.713.0"
+    lodash "^4.17.19"
 
 stream-browserify@^3.0.0:
   version "3.0.0"
