@@ -14,6 +14,9 @@
   "attributes": {
     "test": {
       "type": "string"
+    },
+    "TEST2": {
+      "type": "string"
     }
   }
 }
