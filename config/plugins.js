@@ -14,7 +14,7 @@ module.exports = ({env}) => ({
         secretAccessKey: env('AWS_ACCESS_SECRET'),
         region: env('AWS_REGION'),
         params: {
-          Bucket: env('AWS_BUCKET_NAME'),
+          bucket: env('AWS_BUCKET_NAME'),
         },
         baseUrl: env("CDN_BASE_URL"),
       },
